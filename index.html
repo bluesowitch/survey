@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+</head>
+<body>
+    <p>Job application</p>
+    <form method="POST" action="https://formspree.io/julia.bliusovych@gmail.com">
+  <label>Applicant First Name:
+  <input type="text" name="applicant-fname" placeholder="First Name"
+  required>
+  </label>
+  <br>
+   <label>Applicant Last Name:
+  <input type="text" name="applicant-lname" placeholder="Last Name" 
+  required>
+  </label>
+  <br>
+  <label>Applicant Password (at least 6 characters):
+  <input type="password" name="psw" pattern=".{6,}" title="Six or more characters"
+  required>
+  </label>
+  <br>
+  <label>Applicant E-mail:
+  <input type="email" name="email"
+  required>
+  </label>
+  <br>
+  <label>Applicant Phone Number:
+  <input type="tel" name="aplcnttel" placeholder="123-456-7890" title="1234567890" pattern="[\d]{10}" required>
+  </label>
+  <br>
+  <label>Applicant City: 
+  <select>
+      <option value="Lviv">Lviv</option>
+      <option value="Kyiv">Kyiv</option>
+      <option value="Odesa">Odesa</option>
+      <option value="Kharkiv">Kharkiv</option>
+      <option value=Dnipro>Dnipro</option>
+  </select>
+  </label>
+  <br>
+  <label>Birthday:
+  <input type=date name="bday" max="2000-01-01" required>
+  </label>
+  <br>
+  Gender:<br> 
+  <label><input type="radio" name="gender" value="male">Male<br></label>
+  <label><input type="radio" name="gender" value="female">Female<br></label>
+  <label><input type="radio" name="gender" value="other">Other<br></label>
+  <br>
+  OS of your phone(s): 
+  <br>
+  <label><input type="checkbox" name="os" value="apple">Apple iOS<br></label>
+  <label><input type="checkbox" name="os" value="android">Google Android<br></label>
+  <label><input type="checkbox" name="os" value="ms-windows">Microsoft's Windows Phone OS<br></label>
+  <label><input type="checkbox" name="os" value="nokia">Nokia Symbian<br></label>
+  <br>
+  <label>Please insert the URL of your Facebook profile page: 
+  <input type="url" name="fbprofile" required></label>
+  <br>
+  <label>Anything you would like to mention?
+  <input type="text" name="comment">
+  </label>
+  <input type="submit" value="SEND">
+</form>
+</body>
+</html>
